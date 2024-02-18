@@ -33,15 +33,10 @@ p {
     margin-bottom: 0;
 }
 
-.header {
-    border-bottom: 1px solid #e7e9fc;
-    width: 1440px;
-    height: 72px;
-}
-
 .header-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .navigation {
@@ -115,7 +110,7 @@ p {
     height: 600px;
     text-align: center;
     display: flex;
-    padding: 120px 0;
+    padding: 188px 0;
 }
 
 .section-main-title {
@@ -142,7 +137,10 @@ p {
     display: block;
     margin: 0 auto;
     align-items: center;
-
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 .order-service-btn:hover,
@@ -160,6 +158,7 @@ p {
 
 .benefits-list {
     display: flex;
+    gap: 24px;
 }
 
 .benefits-title {
@@ -176,7 +175,9 @@ p {
 }
 
 
-.benefits-list-item {}
+.benefits-list-item {
+    width: calc((100% - 72px) / 4);
+}
 
 .benefits-list-title {
     font-weight: 500;
@@ -184,6 +185,7 @@ p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .benefits-list-text {
@@ -197,6 +199,7 @@ p {
 /* Our team styles */
 .team {
     background-color: #f4f4fd;
+    padding: 120px 0;
 }
 
 .section-title {
@@ -209,15 +212,18 @@ p {
     text-align: center;
     padding-bottom: 72px;
     padding-top: 12px;
+    margin-bottom: 72px;
 
 }
 
 .team-list {
     display: flex;
+    gap: 24px;
 }
 
 .team-list-item {
     background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -226,6 +232,7 @@ p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
 
 }
 
@@ -234,6 +241,7 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 
 }
 
@@ -242,8 +250,14 @@ p {
 /* Our portfolio styles */
 .portfolio {
     background-color: #fff;
+    padding: 120px 0 120px 0;
 }
+.portfolio-container {
+padding: 32px 16px;
+border: 1px solid #e7e9fc;
+border-top: none;
 
+}
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -263,6 +277,7 @@ p {
     text-transform: capitalize;
     color: #2e2f42;
     text-align: center;
+    margin-bottom: 8px
 }
 
 .portfolio-name {
@@ -283,6 +298,8 @@ p {
 .page-footer {
     background-color: #2E2F42;
     display: inline;
+    padding: 100px 0;
+
 }
 
 .logo-footer {
